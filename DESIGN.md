@@ -93,7 +93,7 @@ components:
 x-stag:
   schema: 1
   platform: android
-  peer: ../wikipedia-ios/DESIGN.md
+  peer: none
   facts:
     ui_framework: { primary: mixed, compose_files: 162, layout_xml_files: 249 }
     min_sdk: 24
@@ -633,66 +633,68 @@ x-stag:
         decided_on: 2026-11-18
         stag_guess: likely_accidental
   generated_from:
-    at: 2026-11-18T06:30:50Z
+    at: 2026-11-18T11:20:45Z
     inputs:
-      - path: AGENTS.md
-        sha256: b0dfc8e8ae609dfbcfbab2bfbe49dd1628927795b3a240d96f5501fcf112a4d6
       - path: app/build.gradle
         sha256: 9557658311fd21a671b56704961b8aa3a0bcbcd2c010eda2b742e7d65d6b2c82
+      - path: gradle/libs.versions.toml
+        sha256: cd4d762072b233ca86d8a8dca88c21496da4a39919acb74a54257956f9f82fb3
+      - path: app/src/main/java/org/wikipedia/compose/theme/WikipediaColor.kt
+        sha256: e418f5cf95cadca327f5b7ce4c05dcba4a130771f6288ac7896f141cee960848
+      - path: app/src/main/java/org/wikipedia/compose/theme/WikipediaTheme.kt
+        sha256: 57547ef3349058f712eaa62e134c522617c571dac28847252e4b9c9c6569f6d5
+      - path: app/src/main/java/org/wikipedia/theme/Theme.kt
+        sha256: 118c61283bafbb5bc3f7d2c321bb61d4cd8663461ef651b8d2c0c6bad59a3c37
+      - path: app/src/main/res/values/colors.xml
+        sha256: 5047acfb13aff16066857b8a77f7034c8aed5a81113c8c7a01941ede031c86be
+      - path: app/src/main/res/values-night/colors.xml
+        sha256: 012cda6f99ec716bfc9a316c64e225a5730305d3ab3e7cb8e917f022ec6187f1
+      - path: app/src/main/res/values/styles.xml
+        sha256: fbbc43a01edd719449a8ca182f4b8f138767a064337cb0fb1bd6e4212d0741e7
+      - path: app/src/main/res/values/styles_dark.xml
+        sha256: a35bfe18852f315c846fac41031893b034ef46c5cadef5c761b7b22b70ce0b61
+      - path: app/src/main/res/values/styles_black.xml
+        sha256: e5313fc3a1261b417d2b0e993f8c5debc9ca9e7d9db5261b38ac189def2473af
+      - path: app/src/main/res/values/styles_sepia.xml
+        sha256: ef6c630bd0564b3feea2893354ff43d0971b1de933721b85c5e27e6772abf9e3
+      - path: app/src/main/java/org/wikipedia/compose/components/WikiCard.kt
+        sha256: bcd4358b1b6048b9106d2f4168ff78ee96bf6b8cedb5d7c20b6c4d2eaad0b533
+      - path: app/src/main/java/org/wikipedia/compose/components/ArticleCard.kt
+        sha256: 4eb528d98e36091f1a5b613930702720e906463de089bd76f3e761b081a5d5f9
+      - path: app/src/main/java/org/wikipedia/compose/components/Settings.kt
+        sha256: 11f7b99bb5d46013d4dae19b6fec8582e99a7b7f70a3e986998cf9559a8c8037
+      - path: app/src/main/java/org/wikipedia/widgets/readingchallenge/WidgetColors.kt
+        sha256: 91b82e92719c66fbc36dd214dce68e4de06f0315ed475876b3660b7aa96f661d
+      - path: app/src/main/java/org/wikipedia/yearinreview/presentation/YearInReviewEntryCard.kt
+        sha256: 5cef2c7fa28d5c3f273f93b690412e3e79c02b841824cba9b0a2cf1d866d3a74
+      - path: app/src/main/java/org/wikipedia/yearinreview/presentation/YearInReviewShareCard.kt
+        sha256: 755a429795aaa673043812ebc101188aafa6289a2202396a9ee37eeef92a3d71
+      - path: app/src/main/java/org/wikipedia/yearinreview/presentation/YearInReviewEndSlide.kt
+        sha256: 21798d371fcae323670e57e4d66bed379131b624231a9b0d55b0c4c5dd4a2475
+      - path: AGENTS.md
+        sha256: b0dfc8e8ae609dfbcfbab2bfbe49dd1628927795b3a240d96f5501fcf112a4d6
       - path: app/src/main/java/org/wikipedia/ActivityLifecycleHandler.kt
         sha256: 43013f9ad0e862e6baaebc99cf89643b4b07fd514ac428d80672b49309c751da
       - path: app/src/main/java/org/wikipedia/WikipediaApp.kt
         sha256: 409646da3fa3b120e590747b6e9848b27d9520567d1876fe8f7c309cb30a0606
       - path: app/src/main/java/org/wikipedia/compose/ComposeColors.kt
         sha256: 83702a8c04354b1c7943aea42f8e5154e4536c562a87b124772de806ef6ee6fc
-      - path: app/src/main/java/org/wikipedia/compose/components/ArticleCard.kt
-        sha256: 4eb528d98e36091f1a5b613930702720e906463de089bd76f3e761b081a5d5f9
       - path: app/src/main/java/org/wikipedia/compose/components/SearchBarCard.kt
         sha256: 35505d148991c77d0c1d8f6b991e931eb3032e9b40769d265d203636c1ed8ff7
-      - path: app/src/main/java/org/wikipedia/compose/components/Settings.kt
-        sha256: 11f7b99bb5d46013d4dae19b6fec8582e99a7b7f70a3e986998cf9559a8c8037
       - path: app/src/main/java/org/wikipedia/compose/components/WikiButtons.kt
         sha256: b07b118fb62fce56a1535c7de6e072e2a97e4987992c9ef2f66f93223ea8e6eb
-      - path: app/src/main/java/org/wikipedia/compose/components/WikiCard.kt
-        sha256: bcd4358b1b6048b9106d2f4168ff78ee96bf6b8cedb5d7c20b6c4d2eaad0b533
       - path: app/src/main/java/org/wikipedia/compose/components/WikiTopAppBar.kt
         sha256: fa7e3dbb9edf50e419c9f45078102874a33a03fc5d9048c80623bc4879472df2
-      - path: app/src/main/java/org/wikipedia/compose/theme/WikipediaColor.kt
-        sha256: e418f5cf95cadca327f5b7ce4c05dcba4a130771f6288ac7896f141cee960848
-      - path: app/src/main/java/org/wikipedia/compose/theme/WikipediaTheme.kt
-        sha256: 57547ef3349058f712eaa62e134c522617c571dac28847252e4b9c9c6569f6d5
       - path: app/src/main/java/org/wikipedia/settings/Prefs.kt
         sha256: a6461a039e117c28f5525374759fd6232dadce927d900c9f49efa67b3aab5c2d
-      - path: app/src/main/java/org/wikipedia/theme/Theme.kt
-        sha256: 118c61283bafbb5bc3f7d2c321bb61d4cd8663461ef651b8d2c0c6bad59a3c37
       - path: app/src/main/java/org/wikipedia/theme/ThemeChooserDialog.kt
         sha256: 2c7c09a25376a02a25e4330f1dbd5164465b13098dab43032b9e73481b9d822a
       - path: app/src/main/java/org/wikipedia/util/ResourceUtil.kt
         sha256: b77fb00c5d6a0f3c3ae0080ba8d4827c824c123ae636ea765b0ea6c329d0abd6
-      - path: app/src/main/java/org/wikipedia/widgets/readingchallenge/WidgetColors.kt
-        sha256: 91b82e92719c66fbc36dd214dce68e4de06f0315ed475876b3660b7aa96f661d
-      - path: app/src/main/java/org/wikipedia/yearinreview/presentation/YearInReviewEndSlide.kt
-        sha256: 21798d371fcae323670e57e4d66bed379131b624231a9b0d55b0c4c5dd4a2475
-      - path: app/src/main/java/org/wikipedia/yearinreview/presentation/YearInReviewEntryCard.kt
-        sha256: 5cef2c7fa28d5c3f273f93b690412e3e79c02b841824cba9b0a2cf1d866d3a74
       - path: app/src/main/java/org/wikipedia/yearinreview/presentation/YearInReviewScreen.kt
         sha256: 6a42fc01e0cdc4c3715547fee313fab9a746f5ae3781f60a2b66c2b44ea3c34f
-      - path: app/src/main/java/org/wikipedia/yearinreview/presentation/YearInReviewShareCard.kt
-        sha256: 755a429795aaa673043812ebc101188aafa6289a2202396a9ee37eeef92a3d71
-      - path: app/src/main/res/values-night/colors.xml
-        sha256: 012cda6f99ec716bfc9a316c64e225a5730305d3ab3e7cb8e917f022ec6187f1
-      - path: app/src/main/res/values/colors.xml
-        sha256: 5047acfb13aff16066857b8a77f7034c8aed5a81113c8c7a01941ede031c86be
       - path: app/src/main/res/values/dimens.xml
         sha256: d4ca1d1b1ae243ef8a83f74662b41110ca3337cad1dc83e75aa6c6fb6892d969
-      - path: app/src/main/res/values/styles.xml
-        sha256: fbbc43a01edd719449a8ca182f4b8f138767a064337cb0fb1bd6e4212d0741e7
-      - path: app/src/main/res/values/styles_black.xml
-        sha256: e5313fc3a1261b417d2b0e993f8c5debc9ca9e7d9db5261b38ac189def2473af
-      - path: app/src/main/res/values/styles_dark.xml
-        sha256: a35bfe18852f315c846fac41031893b034ef46c5cadef5c761b7b22b70ce0b61
-      - path: app/src/main/res/values/styles_sepia.xml
-        sha256: ef6c630bd0564b3feea2893354ff43d0971b1de933721b85c5e27e6772abf9e3
 ---
 ## Overview
 - Keep new UI quiet, trustworthy, editorial, and content-first.
