@@ -52,7 +52,7 @@ typography:
   heading-20: { fontFamily: Roboto, fontSize: 20px, fontWeight: 700, lineHeight: 28px }
   title-16: { fontFamily: Roboto, fontSize: 16px, fontWeight: 500, lineHeight: 24px, letterSpacing: 0.15px }
   body-16: { fontFamily: Roboto, fontSize: 16px, fontWeight: 400, lineHeight: 24px, letterSpacing: 0.5px }
-  article-body: { fontFamily: Roboto, fontSize: 16px, fontWeight: 400, lineHeight: 28px }
+  body-bold: { fontFamily: SF Pro, fontSize: 17px, fontWeight: 700 }
   heading-16: { fontFamily: Roboto, fontSize: 16px, fontWeight: 700, lineHeight: 24px }
   label-14: { fontFamily: Roboto, fontSize: 14px, fontWeight: 500, lineHeight: 20px, letterSpacing: 0.1px }
   body-14: { fontFamily: Roboto, fontSize: 14px, fontWeight: 400, lineHeight: 20px, letterSpacing: 0.25px }
@@ -93,7 +93,7 @@ components:
 x-stag:
   schema: 1
   platform: android
-  peer: none
+  peer: ../wikipedia-ios/DESIGN.md
   facts:
     ui_framework: { primary: mixed, compose_files: 162, layout_xml_files: 249 }
     min_sdk: 24
@@ -232,7 +232,406 @@ x-stag:
     - "Feature palettes are documented as reusable per the designer's direction, but their current code symbols remain local to Reading Challenge and Year in Review."
     - "The repository has no shared spacing object; the spacing names summarize the repeated values used by shared Compose components."
     - "Roboto and Android Serif are platform families, so no repository font files exist for them."
-  deviations: none
+  deviations:
+    rev: 1
+    peer_rev_seen: 1
+    items:
+      - id: dv-accent-color
+        subject: accent-color
+        kind: token
+        this: "#3366CC (accent), dark #6699FF"
+        peer: "#00AF89 (accent), dark #00AF89"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_accidental
+      - id: dv-background-color
+        subject: background-color
+        kind: token
+        this: "#F8F9FA (background), dark #27292D"
+        peer: "#EAECF0 (background), dark #101418"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_accidental
+      - id: dv-caption-text
+        subject: caption-text
+        kind: token
+        this: "Roboto 11 sp, weight 500, line height 16 (caption-11)"
+        peer: "SF Pro 12 pt, weight 400 (caption-1)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_intentional
+      - id: dv-display-text
+        subject: display-text
+        kind: token
+        this: "Roboto 57 sp, weight 400, line height 64 (display-lg)"
+        peer: "SF Pro 34 pt, weight 400 (large-title)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_intentional
+      - id: dv-dynamic-color
+        subject: dynamic-color
+        kind: behavior
+        this: no dynamic color
+        peer: dynamic color on
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_intentional
+      - id: dv-error-color
+        subject: error-color
+        kind: token
+        this: "#B32424 (error), dark #FF4242"
+        peer: "#DD3333 (error), dark #DD3333"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_accidental
+      - id: dv-font-family
+        subject: font-family
+        kind: token
+        this: "Android Serif, EB Garamond, Roboto, Roboto Flex"
+        peer: "EB Garamond, Georgia, SF Pro, Wikipedia"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_accidental
+      - id: dv-media-size
+        subject: media-size
+        kind: component
+        this: "height 108, radius 16 (article-card-image)"
+        peer: "width 40, height 40, radius 4 (article-row-thumbnail)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: open
+      - id: dv-outline-color
+        subject: outline-color
+        kind: token
+        this: "#EAECF0 (outline), dark #2E3136"
+        peer: "#A2A9B1 (outline), dark #2E3136"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_accidental
+      - id: dv-scrim-color
+        subject: scrim-color
+        kind: token
+        this: "#4D000000 (scrim), dark #B3000000"
+        peer: "#00000080 (scrim), dark #000000BF"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_accidental
+      - id: dv-spacing-large
+        subject: spacing-large
+        kind: token
+        this: 20 (large)
+        peer: 16 (large)
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: open
+      - id: dv-success-color
+        subject: success-color
+        kind: token
+        this: "#14866D (success), dark #00AF89"
+        peer: "#14866D (success), dark #14866D"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_accidental
+      - id: dv-surface-color
+        subject: surface-color
+        kind: token
+        this: "#FFFFFF (surface), dark #202122"
+        peer: "#FFFFFF (surface), dark #27292D"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_accidental
+      - id: dv-text-primary
+        subject: text-primary
+        kind: token
+        this: "#202122 (text-primary), dark #EAECF0"
+        peer: "#FFFFFF (on-primary), dark #27292D"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_accidental
+      - id: dv-text-secondary
+        subject: text-secondary
+        kind: token
+        this: "#72777D (text-placeholder), dark #A2A9B1"
+        peer: "#72777D (on-surface-secondary), dark #C8CCD1"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_accidental
+      - id: dv-title-text
+        subject: title-text
+        kind: token
+        this: "EB Garamond 43 sp, weight 400, line height 43 (yir-share-title)"
+        peer: "SF Pro 28 pt, weight 400 (title-1)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_accidental
+      - id: dv-type-size-10
+        subject: type-size-10
+        kind: token
+        this: "Roboto 22 sp, weight 400, line height 28 (title-22)"
+        peer: "SF Pro 20 pt, weight 600 (title-3-semibold)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_intentional
+      - id: dv-type-size-11
+        subject: type-size-11
+        kind: token
+        this: "Roboto 20 sp, weight 700, line height 28 (heading-20)"
+        peer: "SF Pro 17 pt, weight 400 (body)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_intentional
+      - id: dv-type-size-13
+        subject: type-size-13
+        kind: token
+        this: "Roboto 16 sp, weight 400, line height 24 (body-16)"
+        peer: "SF Pro 17 pt, weight 400 (headline)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_intentional
+      - id: dv-type-size-14
+        subject: type-size-14
+        kind: token
+        this: "Roboto 16 sp, weight 700, line height 24 (heading-16)"
+        peer: "SF Pro 17 pt, weight 700 (headline-bold)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_intentional
+      - id: dv-type-size-15
+        subject: type-size-15
+        kind: token
+        this: "Roboto 16 sp, weight 500, line height 24 (title-16)"
+        peer: "SF Pro 17 pt, weight 600 (headline-semibold)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_intentional
+      - id: dv-type-size-16
+        subject: type-size-16
+        kind: token
+        this: "Roboto 14 sp, weight 400, line height 20 (body-14)"
+        peer: "SF Pro 16 pt, weight 400 (callout)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_intentional
+      - id: dv-type-size-17
+        subject: type-size-17
+        kind: token
+        this: "Roboto 14 sp, weight 700, line height 24 (heading-14)"
+        peer: "Georgia 16 pt, weight 400 (editorial-callout)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_accidental
+      - id: dv-type-size-18
+        subject: type-size-18
+        kind: token
+        this: "Roboto 14 sp, weight 500, line height 20 (label-14)"
+        peer: "SF Pro 15 pt, weight 400 (subheadline)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_intentional
+      - id: dv-type-size-19
+        subject: type-size-19
+        kind: token
+        this: "Roboto Flex 13.5 sp, weight 400, line height 14.5 (yir-share-value)"
+        peer: "SF Pro 15 pt, weight 500 (subheadline-medium)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_intentional
+      - id: dv-type-size-2
+        subject: type-size-2
+        kind: token
+        this: "Roboto 45 sp, weight 400, line height 52 (display-md)"
+        peer: "Georgia 28 pt, weight 400 (editorial-title-1)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_accidental
+      - id: dv-type-size-20
+        subject: type-size-20
+        kind: token
+        this: "Roboto 12 sp, weight 400, line height 16 (body-12)"
+        peer: "SF Pro 15 pt, weight 600 (subheadline-semibold)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_intentional
+      - id: dv-type-size-21
+        subject: type-size-21
+        kind: token
+        this: "Roboto 12 sp, weight 500, line height 16 (label-12)"
+        peer: "SF Pro 13 pt, weight 400 (footnote)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_intentional
+      - id: dv-type-size-23
+        subject: type-size-23
+        kind: token
+        this: "EB Garamond 9 sp, weight 700, line height 14.5 (yir-share-list-number)"
+        peer: "SF Pro 11 pt, weight 400 (caption-2)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_accidental
+      - id: dv-type-size-4
+        subject: type-size-4
+        kind: token
+        this: "Roboto 36 sp, weight 400, line height 44 (display-sm)"
+        peer: "SF Pro 28 pt, weight 700 (title-1-bold)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_intentional
+      - id: dv-type-size-5
+        subject: type-size-5
+        kind: token
+        this: "Roboto 32 sp, weight 400, line height 40 (headline-lg)"
+        peer: "SF Pro 22 pt, weight 400 (title-2)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_intentional
+      - id: dv-type-size-6
+        subject: type-size-6
+        kind: token
+        this: "Roboto 28 sp, weight 400, line height 36 (headline-md)"
+        peer: "SF Pro 22 pt, weight 700 (title-2-bold)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_intentional
+      - id: dv-type-size-7
+        subject: type-size-7
+        kind: token
+        this: "Roboto Flex 27 sp, weight 700 (yir-share-number)"
+        peer: "Georgia 20 pt, weight 400 (editorial-title-3)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_accidental
+      - id: dv-type-size-8
+        subject: type-size-8
+        kind: token
+        this: "Roboto 24 sp, weight 700, line height 24 (appbar-24)"
+        peer: "SF Pro 20 pt, weight 400 (title-3)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_intentional
+      - id: dv-type-size-9
+        subject: type-size-9
+        kind: token
+        this: "Roboto 24 sp, weight 700, line height 32 (heading-24)"
+        peer: "SF Pro 20 pt, weight 700 (title-3-bold)"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_intentional
+      - id: dv-warning-color
+        subject: warning-color
+        kind: token
+        this: "#AC6600 (warning), dark #FF9500"
+        peer: "#FF9500 (warning), dark #FFCC33"
+        status: intentional
+        follows: unknown
+        reason: ""
+        decided_by: designer
+        decided_on: 2026-11-18
+        stag_guess: likely_accidental
   generated_from:
     at: 2026-11-18T06:30:50Z
     inputs:
