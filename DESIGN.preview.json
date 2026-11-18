@@ -1,0 +1,833 @@
+{
+  "version": 1,
+  "source_sha256": "6d259b440708c3e4408ee71f2f5b3f003b249f7e2b692c08af054b63899d0322",
+  "generated_at": "2026-11-18T06:33:10Z",
+  "screens": [
+    {
+      "name": "Settings",
+      "root": {
+        "type": "column",
+        "width": "fill",
+        "height": "fill",
+        "align": "stretch",
+        "children": [
+          {
+            "type": "statusBar",
+            "color": "text-primary",
+            "background": "surface"
+          },
+          {
+            "type": "navBar",
+            "title": "Home feed settings",
+            "leading": [
+              {
+                "type": "icon",
+                "name": "material:arrow_back",
+                "size": 24,
+                "color": "text-primary"
+              }
+            ],
+            "trailing": [],
+            "height": 64,
+            "background": "surface",
+            "foreground": "text-primary"
+          },
+          {
+            "type": "column",
+            "width": "fill",
+            "height": "fill",
+            "gap": 34,
+            "padding": {
+              "top": 24,
+              "right": 0,
+              "bottom": 24,
+              "left": 0
+            },
+            "children": [
+              {
+                "type": "column",
+                "width": "fill",
+                "gap": 4,
+                "padding": {
+                  "top": 8,
+                  "right": 16,
+                  "bottom": 8,
+                  "left": 16
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Default feed view",
+                    "typeRole": "body-16",
+                    "color": "text-primary"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Choose which tab opens when you visit the Explore feed",
+                    "typeRole": "body-14",
+                    "color": "text-secondary",
+                    "maxLines": 2
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "width": "fill",
+                "gap": 8,
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 16
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Community",
+                    "typeRole": "label-14",
+                    "color": "accent",
+                    "maxLines": 1
+                  },
+                  {
+                    "type": "column",
+                    "width": "fill",
+                    "gap": 4,
+                    "padding": {
+                      "top": 8,
+                      "right": 16,
+                      "bottom": 8,
+                      "left": 16
+                    },
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Modules",
+                        "typeRole": "body-16",
+                        "color": "text-primary"
+                      },
+                      {
+                        "type": "text",
+                        "text": "Manage sections featuring news and community activity",
+                        "typeRole": "body-14",
+                        "color": "text-secondary",
+                        "maxLines": 2
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "width": "fill",
+                "gap": 8,
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 16
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "For you",
+                    "typeRole": "label-14",
+                    "color": "accent",
+                    "maxLines": 1
+                  },
+                  {
+                    "type": "column",
+                    "width": "fill",
+                    "gap": 4,
+                    "padding": {
+                      "top": 8,
+                      "right": 16,
+                      "bottom": 8,
+                      "left": 16
+                    },
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Modules",
+                        "typeRole": "body-16",
+                        "color": "text-primary"
+                      },
+                      {
+                        "type": "text",
+                        "text": "Choose the personalized sections shown in your feed",
+                        "typeRole": "body-14",
+                        "color": "text-secondary",
+                        "maxLines": 2
+                      }
+                    ]
+                  },
+                  {
+                    "type": "column",
+                    "width": "fill",
+                    "gap": 4,
+                    "padding": {
+                      "top": 8,
+                      "right": 16,
+                      "bottom": 8,
+                      "left": 16
+                    },
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "What’s driving your feed",
+                        "typeRole": "body-16",
+                        "color": "text-primary"
+                      },
+                      {
+                        "type": "text",
+                        "text": "Review the interests used to recommend articles",
+                        "typeRole": "body-14",
+                        "color": "text-secondary",
+                        "maxLines": 2
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "gestureBar",
+            "color": "text-primary"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Article card",
+      "root": {
+        "type": "column",
+        "width": "fill",
+        "height": "fill",
+        "align": "stretch",
+        "children": [
+          {
+            "type": "statusBar",
+            "color": "text-primary",
+            "background": "surface"
+          },
+          {
+            "type": "navBar",
+            "title": "Saved articles",
+            "leading": [
+              {
+                "type": "icon",
+                "name": "material:arrow_back",
+                "size": 24,
+                "color": "text-primary"
+              }
+            ],
+            "trailing": [
+              {
+                "type": "icon",
+                "name": "material:search",
+                "size": 24,
+                "color": "text-primary"
+              },
+              {
+                "type": "icon",
+                "name": "material:more_vert",
+                "size": 24,
+                "color": "text-secondary"
+              }
+            ],
+            "height": 64,
+            "background": "surface",
+            "foreground": "text-primary"
+          },
+          {
+            "type": "column",
+            "width": "fill",
+            "height": "fill",
+            "gap": 16,
+            "padding": 16,
+            "children": [
+              {
+                "type": "box",
+                "width": "fill",
+                "radius": 16,
+                "fill": "surface",
+                "border": {
+                  "color": "outline",
+                  "width": 1
+                },
+                "children": [
+                  {
+                    "type": "column",
+                    "width": "fill",
+                    "children": [
+                      {
+                        "type": "image",
+                        "width": 328,
+                        "height": 108,
+                        "radius": 16
+                      },
+                      {
+                        "type": "column",
+                        "width": "fill",
+                        "gap": 2,
+                        "padding": 8,
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Northern lights",
+                            "typeRole": "body-16",
+                            "color": "text-primary",
+                            "maxLines": 1
+                          },
+                          {
+                            "type": "row",
+                            "width": "fill",
+                            "align": "end",
+                            "distribute": "spaceBetween",
+                            "gap": 8,
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "Natural light display in Earth’s sky",
+                                "typeRole": "body-14",
+                                "color": "text-secondary",
+                                "maxLines": 3
+                              },
+                              {
+                                "type": "spacer",
+                                "size": 24
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "row",
+                        "width": "fill",
+                        "align": "center",
+                        "distribute": "end",
+                        "padding": {
+                          "top": 0,
+                          "right": 12,
+                          "bottom": 8,
+                          "left": 12
+                        },
+                        "children": [
+                          {
+                            "type": "icon",
+                            "name": "material:more_vert",
+                            "size": 24,
+                            "color": "text-secondary"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "width": "fill",
+                "radius": 16,
+                "fill": "selected",
+                "border": {
+                  "color": "outline",
+                  "width": 1
+                },
+                "padding": 8,
+                "children": [
+                  {
+                    "type": "column",
+                    "width": "fill",
+                    "gap": 2,
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Toffee Crisp",
+                        "typeRole": "body-16",
+                        "color": "text-primary",
+                        "maxLines": 1
+                      },
+                      {
+                        "type": "row",
+                        "width": "fill",
+                        "align": "end",
+                        "distribute": "spaceBetween",
+                        "gap": 8,
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "British chocolate and caramel confectionery bar",
+                            "typeRole": "body-14",
+                            "color": "text-secondary",
+                            "maxLines": 3
+                          },
+                          {
+                            "type": "icon",
+                            "name": "material:check_circle",
+                            "size": 24,
+                            "color": "text-primary"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "width": "fill",
+                "radius": 16,
+                "fill": "surface",
+                "border": {
+                  "color": "outline",
+                  "width": 1
+                },
+                "padding": 8,
+                "children": [
+                  {
+                    "type": "column",
+                    "width": "fill",
+                    "gap": 2,
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "History of astronomy",
+                        "typeRole": "body-16",
+                        "color": "text-primary",
+                        "maxLines": 1
+                      },
+                      {
+                        "type": "text",
+                        "text": "The development of humanity’s study of the cosmos",
+                        "typeRole": "body-14",
+                        "color": "text-secondary",
+                        "maxLines": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "gestureBar",
+            "color": "text-primary"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Reading Challenge widget",
+      "root": {
+        "type": "column",
+        "width": "fill",
+        "height": "fill",
+        "align": "stretch",
+        "children": [
+          {
+            "type": "statusBar",
+            "color": "text-primary",
+            "background": "background"
+          },
+          {
+            "type": "column",
+            "width": "fill",
+            "height": "fill",
+            "align": "center",
+            "distribute": "center",
+            "padding": 16,
+            "children": [
+              {
+                "type": "box",
+                "width": "fill",
+                "height": 300,
+                "radius": 16,
+                "fill": "challenge.phone.background",
+                "padding": 20,
+                "children": [
+                  {
+                    "type": "column",
+                    "width": "fill",
+                    "height": "fill",
+                    "distribute": "spaceBetween",
+                    "children": [
+                      {
+                        "type": "row",
+                        "width": "fill",
+                        "align": "center",
+                        "gap": 12,
+                        "children": [
+                          {
+                            "type": "icon",
+                            "name": "material:emoji_events",
+                            "size": 24,
+                            "color": "challenge.phone.content"
+                          },
+                          {
+                            "type": "text",
+                            "text": "Your reading streak",
+                            "typeRole": "title-16",
+                            "color": "challenge.phone.content",
+                            "maxLines": 1
+                          },
+                          {
+                            "type": "spacer",
+                            "size": 12
+                          },
+                          {
+                            "type": "icon",
+                            "name": "sf:w.circle.fill",
+                            "size": 28,
+                            "color": "challenge.phone.content"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "row",
+                        "width": "fill",
+                        "align": "center",
+                        "distribute": "spaceBetween",
+                        "children": [
+                          {
+                            "type": "box",
+                            "radius": 9999,
+                            "fill": "challenge.phone.progress",
+                            "padding": {
+                              "top": 8,
+                              "right": 14,
+                              "bottom": 8,
+                              "left": 14
+                            },
+                            "children": [
+                              {
+                                "type": "row",
+                                "align": "center",
+                                "gap": 6,
+                                "children": [
+                                  {
+                                    "type": "icon",
+                                    "name": "material:local_fire_department",
+                                    "size": 24,
+                                    "color": "challenge.phone.content"
+                                  },
+                                  {
+                                    "type": "text",
+                                    "text": "7 day streak",
+                                    "typeRole": "heading-20",
+                                    "color": "challenge.phone.content"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "image",
+                            "width": 108,
+                            "height": 108,
+                            "radius": 12
+                          }
+                        ]
+                      },
+                      {
+                        "type": "column",
+                        "width": "fill",
+                        "gap": 8,
+                        "padding": {
+                          "top": 0,
+                          "right": 16,
+                          "bottom": 0,
+                          "left": 16
+                        },
+                        "children": [
+                          {
+                            "type": "row",
+                            "width": "fill",
+                            "align": "center",
+                            "distribute": "spaceBetween",
+                            "children": [
+                              {
+                                "type": "icon",
+                                "name": "material:calendar_today",
+                                "size": 24,
+                                "color": "challenge.phone.content"
+                              },
+                              {
+                                "type": "text",
+                                "text": "7 of 25 days",
+                                "typeRole": "label-14",
+                                "color": "challenge.phone.content"
+                              },
+                              {
+                                "type": "icon",
+                                "name": "material:flag",
+                                "size": 24,
+                                "color": "challenge.phone.content"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "width": "fill",
+                            "height": 12,
+                            "radius": 9999,
+                            "fill": "surface",
+                            "children": [
+                              {
+                                "type": "box",
+                                "width": 104,
+                                "height": 12,
+                                "radius": 9999,
+                                "fill": "challenge.phone.progress"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "gestureBar",
+            "color": "text-primary"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Year in Review share card",
+      "root": {
+        "type": "column",
+        "width": "fill",
+        "height": "fill",
+        "align": "stretch",
+        "children": [
+          {
+            "type": "statusBar",
+            "color": "text-primary",
+            "background": "background"
+          },
+          {
+            "type": "column",
+            "width": "fill",
+            "height": "fill",
+            "align": "center",
+            "distribute": "center",
+            "padding": 16,
+            "children": [
+              {
+                "type": "box",
+                "width": 360,
+                "radius": 2,
+                "fill": "yir.share.background",
+                "padding": {
+                  "top": 6,
+                  "right": 12,
+                  "bottom": 10,
+                  "left": 12
+                },
+                "children": [
+                  {
+                    "type": "column",
+                    "width": "fill",
+                    "gap": 10,
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Your Wikipedia year in review 2026",
+                        "typeRole": "yir-share-title",
+                        "color": "text-primary",
+                        "maxLines": 2
+                      },
+                      {
+                        "type": "image",
+                        "width": 250,
+                        "height": 112,
+                        "radius": 0
+                      },
+                      {
+                        "type": "divider",
+                        "color": "text-primary",
+                        "thickness": 1
+                      },
+                      {
+                        "type": "row",
+                        "width": "fill",
+                        "distribute": "spaceBetween",
+                        "children": [
+                          {
+                            "type": "column",
+                            "gap": 2,
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "ARTICLES READ",
+                                "typeRole": "body-16",
+                                "color": "text-primary"
+                              },
+                              {
+                                "type": "text",
+                                "text": "1,254",
+                                "typeRole": "yir-share-number",
+                                "color": "text-primary"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "column",
+                            "align": "end",
+                            "gap": 2,
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "MINUTES READ",
+                                "typeRole": "body-16",
+                                "color": "text-primary",
+                                "align": "end"
+                              },
+                              {
+                                "type": "text",
+                                "text": "3,820",
+                                "typeRole": "yir-share-number",
+                                "color": "text-primary",
+                                "align": "end"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "divider",
+                        "color": "text-primary",
+                        "thickness": 1
+                      },
+                      {
+                        "type": "row",
+                        "width": "fill",
+                        "gap": 32,
+                        "padding": {
+                          "top": 0,
+                          "right": 0,
+                          "bottom": 8,
+                          "left": 0
+                        },
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "ARTICLES REREAD",
+                            "typeRole": "body-16",
+                            "color": "text-primary",
+                            "maxLines": 2
+                          },
+                          {
+                            "type": "column",
+                            "gap": 4,
+                            "children": [
+                              {
+                                "type": "row",
+                                "gap": 4,
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "(1)",
+                                    "typeRole": "yir-share-list-number",
+                                    "color": "text-primary"
+                                  },
+                                  {
+                                    "type": "text",
+                                    "text": "Pamela Anderson",
+                                    "typeRole": "yir-share-value",
+                                    "color": "text-primary"
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "row",
+                                "gap": 4,
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "(2)",
+                                    "typeRole": "yir-share-list-number",
+                                    "color": "text-primary"
+                                  },
+                                  {
+                                    "type": "text",
+                                    "text": "Pamukkale",
+                                    "typeRole": "yir-share-value",
+                                    "color": "text-primary"
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "row",
+                                "gap": 4,
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "(3)",
+                                    "typeRole": "yir-share-list-number",
+                                    "color": "text-primary"
+                                  },
+                                  {
+                                    "type": "text",
+                                    "text": "History of science fiction",
+                                    "typeRole": "yir-share-value",
+                                    "color": "text-primary",
+                                    "maxLines": 2
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "divider",
+                        "color": "text-primary",
+                        "thickness": 1
+                      },
+                      {
+                        "type": "row",
+                        "width": "fill",
+                        "align": "center",
+                        "distribute": "spaceBetween",
+                        "padding": {
+                          "top": 2,
+                          "right": 0,
+                          "bottom": 0,
+                          "left": 0
+                        },
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Created with Wikipedia",
+                            "typeRole": "body-16",
+                            "color": "text-primary"
+                          },
+                          {
+                            "type": "icon",
+                            "name": "sf:w.circle",
+                            "size": 26,
+                            "color": "text-primary"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "gestureBar",
+            "color": "text-primary"
+          }
+        ]
+      }
+    }
+  ]
+}
