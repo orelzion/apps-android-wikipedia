@@ -1,0 +1,769 @@
+{
+  "version": 1,
+  "source_sha256": "89024e3f0e68173039ea8b3cd86d91f23e9772fdf4063ea5432aaf63a2ad111e",
+  "generated_at": "2026-11-18T11:22:55Z",
+  "screens": [
+    {
+      "name": "For you",
+      "root": {
+        "type": "column",
+        "width": "fill",
+        "height": "fill",
+        "align": "stretch",
+        "children": [
+          {
+            "type": "statusBar",
+            "color": "text-primary",
+            "background": "surface"
+          },
+          {
+            "type": "navBar",
+            "title": "For you",
+            "leading": [
+              {
+                "type": "icon",
+                "name": "material:arrow_back",
+                "size": 24,
+                "color": "text-primary"
+              }
+            ],
+            "trailing": [],
+            "height": 64,
+            "background": "surface",
+            "foreground": "text-primary"
+          },
+          {
+            "type": "column",
+            "width": "fill",
+            "padding": {
+              "top": 8,
+              "right": 0,
+              "bottom": 24,
+              "left": 0
+            },
+            "gap": 16,
+            "children": [
+              {
+                "type": "text",
+                "text": "Turn off modules to hide them from your For you feed. Re-enable them anytime.",
+                "typeRole": "body-14",
+                "color": "text-primary",
+                "maxLines": 4,
+                "align": "start"
+              },
+              {
+                "type": "row",
+                "width": "fill",
+                "padding": {
+                  "top": 8,
+                  "right": 16,
+                  "bottom": 8,
+                  "left": 16
+                },
+                "align": "center",
+                "distribute": "spaceBetween",
+                "children": [
+                  {
+                    "type": "column",
+                    "gap": 4,
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Because you read",
+                        "typeRole": "body-16",
+                        "color": "text-primary",
+                        "maxLines": 1
+                      },
+                      {
+                        "type": "text",
+                        "text": "Recommendations based on articles you have read",
+                        "typeRole": "body-14",
+                        "color": "text-secondary",
+                        "maxLines": 2
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "width": 52,
+                    "height": 32,
+                    "radius": 9999,
+                    "fill": "accent",
+                    "padding": 4,
+                    "align": "end",
+                    "children": [
+                      {
+                        "type": "box",
+                        "width": 24,
+                        "height": 24,
+                        "radius": 9999,
+                        "fill": "surface"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "row",
+                "width": "fill",
+                "padding": {
+                  "top": 8,
+                  "right": 16,
+                  "bottom": 8,
+                  "left": 16
+                },
+                "align": "center",
+                "distribute": "spaceBetween",
+                "children": [
+                  {
+                    "type": "column",
+                    "gap": 4,
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Continue reading",
+                        "typeRole": "body-16",
+                        "color": "text-primary",
+                        "maxLines": 1
+                      },
+                      {
+                        "type": "text",
+                        "text": "Return to articles you recently opened",
+                        "typeRole": "body-14",
+                        "color": "text-secondary",
+                        "maxLines": 2
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "width": 52,
+                    "height": 32,
+                    "radius": 9999,
+                    "fill": "accent",
+                    "padding": 4,
+                    "align": "end",
+                    "children": [
+                      {
+                        "type": "box",
+                        "width": 24,
+                        "height": 24,
+                        "radius": 9999,
+                        "fill": "surface"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "row",
+                "width": "fill",
+                "padding": {
+                  "top": 8,
+                  "right": 16,
+                  "bottom": 8,
+                  "left": 16
+                },
+                "align": "center",
+                "distribute": "spaceBetween",
+                "children": [
+                  {
+                    "type": "column",
+                    "gap": 4,
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Suggested edits",
+                        "typeRole": "body-16",
+                        "color": "text-primary",
+                        "maxLines": 1
+                      },
+                      {
+                        "type": "text",
+                        "text": "Find small ways to improve Wikipedia",
+                        "typeRole": "body-14",
+                        "color": "text-secondary",
+                        "maxLines": 2
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "width": 52,
+                    "height": 32,
+                    "radius": 9999,
+                    "fill": "background",
+                    "border": {
+                      "color": "inactive",
+                      "width": 1
+                    },
+                    "padding": 4,
+                    "align": "start",
+                    "children": [
+                      {
+                        "type": "box",
+                        "width": 24,
+                        "height": 24,
+                        "radius": 9999,
+                        "fill": "inactive"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "gestureBar",
+            "color": "text-primary"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Article card",
+      "root": {
+        "type": "column",
+        "width": "fill",
+        "height": "fill",
+        "align": "stretch",
+        "children": [
+          {
+            "type": "statusBar",
+            "color": "text-primary",
+            "background": "surface"
+          },
+          {
+            "type": "navBar",
+            "title": "Saved articles",
+            "leading": [
+              {
+                "type": "icon",
+                "name": "material:arrow_back",
+                "size": 24,
+                "color": "text-primary"
+              }
+            ],
+            "trailing": [
+              {
+                "type": "icon",
+                "name": "material:search",
+                "size": 24,
+                "color": "text-primary"
+              }
+            ],
+            "height": 64,
+            "background": "surface",
+            "foreground": "text-primary"
+          },
+          {
+            "type": "column",
+            "width": "fill",
+            "padding": 16,
+            "gap": 16,
+            "children": [
+              {
+                "type": "box",
+                "width": "fill",
+                "radius": 16,
+                "fill": "surface",
+                "border": {
+                  "color": "outline",
+                  "width": 1
+                },
+                "children": [
+                  {
+                    "type": "image",
+                    "width": 328,
+                    "height": 108,
+                    "radius": 16
+                  },
+                  {
+                    "type": "column",
+                    "padding": 8,
+                    "gap": 2,
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Toffee Crisp",
+                        "typeRole": "body-16",
+                        "color": "text-primary",
+                        "maxLines": 1
+                      },
+                      {
+                        "type": "row",
+                        "width": "fill",
+                        "align": "end",
+                        "distribute": "spaceBetween",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Chocolate bar made with caramel and crisped rice",
+                            "typeRole": "body-14",
+                            "color": "text-secondary",
+                            "maxLines": 3
+                          },
+                          {
+                            "type": "icon",
+                            "name": "material:more_vert",
+                            "size": 24,
+                            "color": "text-secondary"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "width": "fill",
+                "radius": 16,
+                "fill": "selected",
+                "border": {
+                  "color": "outline",
+                  "width": 1
+                },
+                "children": [
+                  {
+                    "type": "image",
+                    "width": 328,
+                    "height": 108,
+                    "radius": 16
+                  },
+                  {
+                    "type": "column",
+                    "padding": 8,
+                    "gap": 2,
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Great Barrier Reef",
+                        "typeRole": "body-16",
+                        "color": "text-primary",
+                        "maxLines": 1
+                      },
+                      {
+                        "type": "row",
+                        "width": "fill",
+                        "align": "end",
+                        "distribute": "spaceBetween",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Coral reef system off the coast of Queensland, Australia",
+                            "typeRole": "body-14",
+                            "color": "text-secondary",
+                            "maxLines": 3
+                          },
+                          {
+                            "type": "icon",
+                            "name": "material:check_circle",
+                            "size": 24,
+                            "color": "text-primary"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "gestureBar",
+            "color": "text-primary"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Reading Challenge widget",
+      "root": {
+        "type": "column",
+        "width": "fill",
+        "height": "fill",
+        "padding": 24,
+        "align": "center",
+        "distribute": "center",
+        "children": [
+          {
+            "type": "box",
+            "width": 230,
+            "height": 231,
+            "radius": 16,
+            "fill": "challenge.phone.background",
+            "padding": {
+              "top": 12,
+              "right": 16,
+              "bottom": 12,
+              "left": 16
+            },
+            "children": [
+              {
+                "type": "row",
+                "width": "fill",
+                "distribute": "end",
+                "children": [
+                  {
+                    "type": "icon",
+                    "name": "sf:w.circle.fill",
+                    "size": 28,
+                    "color": "surface"
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "width": "fill",
+                "height": "fill",
+                "align": "center",
+                "distribute": "spaceBetween",
+                "children": [
+                  {
+                    "type": "spacer",
+                    "size": 4
+                  },
+                  {
+                    "type": "image",
+                    "width": 104,
+                    "height": 104,
+                    "radius": 16
+                  },
+                  {
+                    "type": "box",
+                    "radius": 9999,
+                    "fill": "challenge.phone.progress",
+                    "padding": {
+                      "top": 6,
+                      "right": 12,
+                      "bottom": 6,
+                      "left": 12
+                    },
+                    "children": [
+                      {
+                        "type": "row",
+                        "gap": 6,
+                        "align": "center",
+                        "children": [
+                          {
+                            "type": "icon",
+                            "name": "material:local_fire_department",
+                            "size": 20,
+                            "color": "challenge.phone.content"
+                          },
+                          {
+                            "type": "text",
+                            "text": "7 day streak",
+                            "typeRole": "label-14",
+                            "color": "challenge.phone.content",
+                            "maxLines": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Year in Review share card",
+      "root": {
+        "type": "column",
+        "width": 360,
+        "height": "fill",
+        "padding": {
+          "top": 6,
+          "right": 12,
+          "bottom": 0,
+          "left": 12
+        },
+        "align": "stretch",
+        "distribute": "spaceBetween",
+        "children": [
+          {
+            "type": "column",
+            "gap": 10,
+            "children": [
+              {
+                "type": "text",
+                "text": "Your 2026 Wikipedia Year in Review",
+                "typeRole": "yir-share-title",
+                "color": "text-primary",
+                "maxLines": 3
+              },
+              {
+                "type": "image",
+                "width": 250,
+                "height": 92,
+                "radius": 0
+              },
+              {
+                "type": "divider",
+                "color": "text-primary",
+                "thickness": 1
+              },
+              {
+                "type": "row",
+                "width": "fill",
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 10,
+                  "left": 0
+                },
+                "distribute": "spaceBetween",
+                "children": [
+                  {
+                    "type": "column",
+                    "align": "start",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "articles read",
+                        "typeRole": "title-16",
+                        "color": "text-primary"
+                      },
+                      {
+                        "type": "text",
+                        "text": "1,284",
+                        "typeRole": "yir-share-number",
+                        "color": "text-primary"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "column",
+                    "align": "end",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "minutes read",
+                        "typeRole": "title-16",
+                        "color": "text-primary",
+                        "align": "end"
+                      },
+                      {
+                        "type": "text",
+                        "text": "9,430",
+                        "typeRole": "yir-share-number",
+                        "color": "text-primary",
+                        "align": "end"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "divider",
+                "color": "text-primary",
+                "thickness": 1
+              },
+              {
+                "type": "row",
+                "width": "fill",
+                "padding": {
+                  "top": 10,
+                  "right": 0,
+                  "bottom": 18,
+                  "left": 0
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "articles reread",
+                    "typeRole": "title-16",
+                    "color": "text-primary",
+                    "maxLines": 2
+                  },
+                  {
+                    "type": "spacer",
+                    "size": 32
+                  },
+                  {
+                    "type": "column",
+                    "gap": 4,
+                    "children": [
+                      {
+                        "type": "row",
+                        "gap": 4,
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "(1)",
+                            "typeRole": "yir-share-list-number",
+                            "color": "text-primary"
+                          },
+                          {
+                            "type": "text",
+                            "text": "Frida Kahlo",
+                            "typeRole": "yir-share-value",
+                            "color": "text-primary"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "row",
+                        "gap": 4,
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "(2)",
+                            "typeRole": "yir-share-list-number",
+                            "color": "text-primary"
+                          },
+                          {
+                            "type": "text",
+                            "text": "Great Barrier Reef",
+                            "typeRole": "yir-share-value",
+                            "color": "text-primary"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "row",
+                        "gap": 4,
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "(3)",
+                            "typeRole": "yir-share-list-number",
+                            "color": "text-primary"
+                          },
+                          {
+                            "type": "text",
+                            "text": "Apollo 11",
+                            "typeRole": "yir-share-value",
+                            "color": "text-primary"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "divider",
+                "color": "text-primary",
+                "thickness": 1
+              },
+              {
+                "type": "row",
+                "width": "fill",
+                "padding": {
+                  "top": 10,
+                  "right": 0,
+                  "bottom": 18,
+                  "left": 0
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "longest rabbit hole",
+                    "typeRole": "title-16",
+                    "color": "text-primary",
+                    "maxLines": 2
+                  },
+                  {
+                    "type": "spacer",
+                    "size": 32
+                  },
+                  {
+                    "type": "column",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Ocean",
+                        "typeRole": "yir-share-value",
+                        "color": "text-primary"
+                      },
+                      {
+                        "type": "text",
+                        "text": "↓ Marine biology",
+                        "typeRole": "yir-share-value",
+                        "color": "text-primary"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "divider",
+                "color": "text-primary",
+                "thickness": 1
+              },
+              {
+                "type": "row",
+                "width": "fill",
+                "padding": {
+                  "top": 10,
+                  "right": 0,
+                  "bottom": 18,
+                  "left": 0
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "top category",
+                    "typeRole": "title-16",
+                    "color": "text-primary"
+                  },
+                  {
+                    "type": "spacer",
+                    "size": 32
+                  },
+                  {
+                    "type": "text",
+                    "text": "Science and culture",
+                    "typeRole": "yir-share-value",
+                    "color": "text-primary"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "column",
+            "children": [
+              {
+                "type": "divider",
+                "color": "text-primary",
+                "thickness": 1
+              },
+              {
+                "type": "row",
+                "width": "fill",
+                "padding": {
+                  "top": 12,
+                  "right": 0,
+                  "bottom": 10,
+                  "left": 0
+                },
+                "align": "center",
+                "distribute": "spaceBetween",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Created with Wikipedia",
+                    "typeRole": "title-16",
+                    "color": "text-primary"
+                  },
+                  {
+                    "type": "icon",
+                    "name": "sf:w.circle",
+                    "size": 26,
+                    "color": "text-primary"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
